@@ -27,11 +27,11 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Registrar estudiante</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
 
-<!--Creación del formulario-->
+    <!--Creación del formulario-->
         <div class="modal-body">
           <form id="form">
 
@@ -45,7 +45,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="numeroDocumento" class="form-label">Example textarea</label>
+                <label for="numeroDocumento" class="form-label">Número de documento</label>
                 <input type="text" class="form-control" id="numeroDocumento">
             </div>
 
@@ -55,7 +55,7 @@
             </div>
 
             <div class="mb-3">
-                <label for="apellido" class="form-label">Apellido</label>
+                <label for="apellido" class="form-label">Apellidos</label>
                 <input type="text" class="form-control" id="apellido">
             </div>
 
@@ -84,12 +84,48 @@
         </div>
 
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
           <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
         </div>
       </div>
     </div>
   </div>
+
+
+  <div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h1>Consultar estudiantes</h1>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#eModal" >Consultar Estudiantes</button>
+
+        </div>
+    </div>
+</div>
+
+<!-- Button trigger modal -->
+
+
+<!-- Modal -->
+<div class="modal fade" id="eModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h1 class="modal-title fs-5" id="exampleModalLabel">Consultar estudiantes</h1>
+      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+    </div>
+
+<!--Creación del formulario-->
+    <div class="modal-body">
+        <div id="resultado"></div>
+    </div>
+
+    <div class="modal-footer">
+      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+      <button type="button" class="btn btn-primary" id="btn-guardar">Guardar</button>
+    </div>
+  </div>
+</div>
+</div>
 
 
 
